@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrainSphere - Corporate Training and Workshops</title>
+    <link rel="stylesheet" href="trainsphere-workshops-enquiry.css">
+</head>
+
+<body>
+
+<h2>TrainSphere</h2>
+
+<div class="container">
+
+    <h3>Corporate Training &amp; Workshop Enquiry Form</h3>
+
+    <form id="trainingForm" action="#">
+
+        <label for="name">Coordinator / Participant Name</label><br>
+        <input type="text" id="name" placeholder="Enter full name"><br>
+
+        <label for="service">Select Training / Workshop Program</label><br>
+        <select id="service">
+            <option value="">Select Program</option>
+            <option>Leadership Labs</option>
+            <option>Tech Bootcamps</option>
+            <option>Agile Sprints</option>
+            <option>Soft Skills Mastery</option>
+        </select><br>
+
+        <label for="days">Number of Workshop Days</label><br>
+        <input type="number" id="days" placeholder="Enter number of days" min="1"><br>
+
+        <button type="button" onclick="submitEnquiry()">
+            Submit Enquiry
+        </button>
+
+    </form>
+
+    <p id="message"></p>
+
+    <hr>
+
+    <h3>TrainSphere Workshop Notifications</h3>
+
+    <p id="status">Waiting for updates...</p>
+
+    <button type="button" onclick="startUpdates()">Start Updates</button>
+
+    <button type="button" onclick="stopUpdates()">Stop Updates</button>
+
+    <button type="button" onclick="showOffer()">Show Workshop Offer</button>
+
+    <button type="button" onclick="cancelOffer()">Cancel Offer</button>
+
+</div>
+
+<script src="trainsphere-workshops-enquiry.js"></script>
+
+</body>
+</html>
